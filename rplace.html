@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>r/Place Data Display</title>
+    <!-- import chroma.js for the heatmap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- DIFFERENT OPTIONS FOR DATASETS -->
+    <!-- <script defer src="./creatingJsonFile/test_place_tiles_json.json" charset="utf-8"></script> -->
+    <script defer src="./1place_tiles_json.json" charset="utf-8"></script>
+    <script defer src="./2place_tiles_json.json" charset="utf-8"></script>
+    <script defer src="./3place_tiles_json.json" charset="utf-8"></script>
+    
+    <!-- DIFFERENT OPTIONS FOR LOADING -->
+    <!-- <script defer src="./simulate.js" charset="utf-8"></script> -->
+    <script defer src="./heatmap.js" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body style="background-color:#000000;" onload = "setup()">
+    <canvas id = "heatmap" width = "1000" height = "1000" style="border:1px solid #ffffff;"></canvas>
+</body>
+</html>
